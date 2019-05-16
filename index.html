@@ -1,0 +1,49 @@
+<!--
+    Name: Jeremy Becker
+    Date: 03.27.19
+    Filename: index.html
+    Description: Page for content of tic-tac-toe game
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <h1>Tic - Tac - Toe</h1>
+    <div id="playerNames">
+        <h2>Enter player names:</h2>
+        <p>Player 1 Name:</p>
+        <input type="text" placeholder="Name" id="player1Inp"><br/>
+        <p>Player 2 Name:</p>
+        <input type="text" placeholder="Name" id="player2Inp"><br/>
+        <button id="startBtn">Start Game</button>
+    </div>
+    <table id="game-board" class="hide">
+        <tr class="top">
+            <td class="left"><div class="square">x</div></td>
+            <td class="center"><div class="square">x</div></td>
+            <td class="right"><div class="square">x</div></td>
+        </tr>
+        <tr class="middle">
+            <td class="left"><div class="square">x</div></td>
+            <td class="center"><div class="square">x</div></td>
+            <td class="right"><div class="square">x</div></td>
+        </tr>
+        <tr class="bottom">
+            <td class="left"><div class="square">x</div></td>
+            <td class="center"><div class="square">x</div></td>
+            <td class="right"><div class="square">x</div></td>
+        </tr>
+    </table>
+    <canvas id="winLine" width="750px" height="750px"></canvas>
+    <button id="replayBtn">Play again</button>
+    <script src="script.js"></script>
+</body>
+</html>
